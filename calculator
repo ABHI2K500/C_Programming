@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main(){
+  int num1,num2,value;
+  printf("Enter first number:");
+  scanf("%d",&num1);
+  printf("\nEnter second number:");
+  scanf("%d",&num1);
+  char operator;
+  printf("\nchoose an operator (+, -, *, /, %):");
+  if(operator=="+"){
+    value=num1+num2;
+    printf("sum=%d",value);
+  }
+  else if(operator=="-"){
+    value=num1-num2;
+    printf("difference=%d",value);
+  }
+  else if(operator=="*"){
+    value=num1*num2;
+    printf("product=%d",value);
+  }
+  else if(operator=="/"){
+    value=num1/num2;
+    printf("division=%d",value);
+  }
+  else if(operator=="%"){
+    value=num1%num2;
+    printf("reminder=%d",value);
+  }
+  else{
+    printf("Enter a valid operator!");
+  }
+}
+  
